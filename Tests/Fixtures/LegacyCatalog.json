@@ -1,0 +1,453 @@
+{
+  "papers": [
+    {
+      "id": "attention",
+      "title": "Attention Is All You Need",
+      "hook": "所有大模型的起点，竟然只靠“注意力”？！",
+      "subtitle": "让注意力机制成为主角，而不是按顺序读完每个词。",
+      "author": "Ashish Vaswani",
+      "year": 2017,
+      "journalID": "arxiv",
+      "topics": [
+        "生成式 AI",
+        "机器学习"
+      ],
+      "sourceURL": "https://arxiv.org/abs/1706.03762",
+      "pdfURL": "https://arxiv.org/pdf/1706.03762",
+      "localPDF": "attention",
+      "color": "DDEAE4",
+      "symbol": "point.3.connected.trianglepath.dotted",
+      "coverText": "ATTENTION",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "从注意力开始",
+          "text": "这篇论文提出 Transformer，将注意力机制作为架构的核心。阅读时可以先理解输入之间如何建立联系，再看具体训练实验。",
+          "source": "the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“所有”和“只靠”是夸张表达；这篇论文提出 Transformer 架构，并不是说所有大模型都只依靠注意力。"
+    },
+    {
+      "id": "rag",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "hook": "大模型终于不胡说了？答案就藏在这篇论文里！",
+      "subtitle": "把生成能力和可检索的知识放在同一个流程里。",
+      "author": "Patrick Lewis",
+      "year": 2020,
+      "journalID": "arxiv",
+      "topics": [
+        "生成式 AI",
+        "交互设计"
+      ],
+      "sourceURL": "https://arxiv.org/abs/2005.11401",
+      "pdfURL": "https://arxiv.org/pdf/2005.11401",
+      "localPDF": "rag",
+      "color": "E7E4F2",
+      "symbol": "books.vertical",
+      "coverText": "RAG",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "把知识接到生成上",
+          "text": "论文研究检索增强生成，让参数中的知识与可检索的外部记忆共同参与生成。它给“带着资料回答问题”提供了一种具体的研究框架。",
+          "source": "models which combine pre-trained parametric and non-parametric memory for language generation.",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“不胡说”并不成立；检索增强让生成过程能利用外部资料，但不能保证回答永远正确。"
+    },
+    {
+      "id": "lora",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "hook": "显卡不够？这招让大模型微调直接“白菜价”！",
+      "subtitle": "冻结原来的权重，把调整放进更小的矩阵。",
+      "author": "Edward J. Hu",
+      "year": 2021,
+      "journalID": "arxiv",
+      "topics": [
+        "生成式 AI",
+        "机器学习"
+      ],
+      "sourceURL": "https://arxiv.org/abs/2106.09685",
+      "pdfURL": "https://arxiv.org/pdf/2106.09685",
+      "localPDF": "lora",
+      "color": "F2E5D6",
+      "symbol": "slider.horizontal.3",
+      "coverText": "LoRA",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "调整少量参数",
+          "text": "LoRA 冻结预训练模型的权重，在部分层中加入可训练的低秩矩阵。它让我们换一种方式理解模型适配：保留主体，再学习较小的调整。",
+          "source": "freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“白菜价”是夸张说法；LoRA 减少可训练参数，但实际显存与费用仍取决于模型、数据和训练设置。"
+    },
+    {
+      "id": "clip",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "hook": "给 AI 一句话，它就能看懂全世界？！",
+      "subtitle": "CLIP 从图文配对里建立视觉与语言的联系。",
+      "author": "Alec Radford",
+      "year": 2021,
+      "journalID": "arxiv",
+      "topics": [
+        "计算机视觉",
+        "交互设计"
+      ],
+      "sourceURL": "https://arxiv.org/abs/2103.00020",
+      "pdfURL": "https://arxiv.org/pdf/2103.00020",
+      "localPDF": "clip",
+      "color": "DFE8F1",
+      "symbol": "photo.on.rectangle.angled",
+      "coverText": "CLIP",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "用语言连接图像",
+          "text": "论文探索从图像及其文字描述中学习视觉表示。理解它时，可以关注文本如何成为描述视觉概念的入口，再看模型怎样迁移到不同任务。",
+          "source": "Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision.",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“看懂全世界”是夸张说法；CLIP 学习图文之间的对应关系，并没有证明能理解所有图片或现实场景。"
+    },
+    {
+      "id": "ddpm",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "hook": "AI 画图的秘密被拆穿了：竟然从一团噪声开始！",
+      "subtitle": "先看逐步去噪的过程，再进入公式和实验。",
+      "author": "Jonathan Ho",
+      "year": 2020,
+      "journalID": "arxiv",
+      "topics": [
+        "生成式 AI",
+        "计算机视觉"
+      ],
+      "sourceURL": "https://arxiv.org/abs/2006.11239",
+      "pdfURL": "https://arxiv.org/pdf/2006.11239",
+      "localPDF": "ddpm",
+      "color": "EADFE8",
+      "symbol": "sparkles",
+      "coverText": "DIFFUSION",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "从去噪理解生成",
+          "text": "论文把图像生成看成逐步去噪的过程：训练时学习如何移除噪声，生成时从噪声一步步得到图像。可以先看流程图，再回到训练目标，理解每一步在学什么。",
+          "source": "We present high quality image synthesis results using diffusion probabilistic models",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“秘密被拆穿”是引流修辞；论文研究逐步去噪的生成方法，并不意味着所有 AI 绘图都采用同一种方法。"
+    },
+    {
+      "id": "resnet",
+      "title": "Deep Residual Learning for Image Recognition",
+      "hook": "网络越深越废？这篇论文直接把它救活！",
+      "subtitle": "从残差连接这个切入点，重新理解深度网络。",
+      "author": "Kaiming He",
+      "year": 2015,
+      "journalID": "arxiv",
+      "topics": [
+        "计算机视觉",
+        "机器学习"
+      ],
+      "sourceURL": "https://arxiv.org/abs/1512.03385",
+      "pdfURL": "https://arxiv.org/pdf/1512.03385",
+      "localPDF": "resnet",
+      "color": "E0E8D7",
+      "symbol": "square.stack.3d.up",
+      "coverText": "RESNET",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "让网络学习残差",
+          "text": "网络更深，并不一定更容易训练。论文让部分网络层学习输入与目标之间的差值，再通过捷径连接保留输入。阅读时可以把普通网络与残差网络的结构图放在一起比较。",
+          "source": "We present a residual learning framework to ease the training of networks",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“越深越废”和“救活”是夸张表达；论文讨论特定深层网络的退化问题，并用残差学习改善训练。"
+    },
+    {
+      "id": "deep",
+      "title": "Deep learning",
+      "hook": "深度学习凭什么横扫世界？这篇文章把底牌掀了！",
+      "subtitle": "从层次化表示的角度，读一篇经典综述。",
+      "author": "Yann LeCun",
+      "year": 2015,
+      "journalID": "nature",
+      "topics": [
+        "机器学习",
+        "计算机视觉"
+      ],
+      "sourceURL": "https://doi.org/10.1038/nature14539",
+      "pdfURL": "https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf",
+      "localPDF": "deep",
+      "color": "EADDD9",
+      "symbol": "square.3.layers.3d",
+      "coverText": "DEEP",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "逐层学习表示",
+          "text": "这篇综述把深度学习介绍为一种学习多层次数据表示的方法。阅读时可以沿着“每一层学到了什么”的问题，连接不同任务和网络结构。",
+          "source": "Deep-learning methods are representation-learning methods with multiple levels of representation",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“横扫世界”是夸张表达；这是一篇深度学习综述，介绍方法与进展，并不宣称它适用于所有任务。"
+    },
+    {
+      "id": "folk",
+      "title": "A Few Useful Things to Know about Machine Learning",
+      "hook": "机器学习越学越玄？这篇文章把圈内经验全抖出来了！",
+      "subtitle": "一篇适合作为研究问题清单的经典文章。",
+      "author": "Pedro Domingos",
+      "year": 2012,
+      "journalID": "cacm",
+      "topics": [
+        "机器学习",
+        "交互设计"
+      ],
+      "sourceURL": "https://doi.org/10.1145/2347736.2347755",
+      "pdfURL": "https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf",
+      "localPDF": "folk",
+      "color": "E4E4DA",
+      "symbol": "checklist",
+      "coverText": "READ / THINK",
+      "insights": [
+        {
+          "id": "s1",
+          "title": "从经验知识开始",
+          "text": "这篇文章把机器学习实践中的常见经验整理成一组问题。读它时可以重点看泛化、特征和评估：模型在训练集上的表现，并不能直接代表它在新数据上的效果。",
+          "source": "Tapping into the \"folk knowledge\" needed to advance machine learning applications.",
+          "location": "PDF 第 1 页",
+          "page": 1
+        }
+      ],
+      "headlineNote": "“全抖出来”是夸张表达；这篇文章整理了一部分机器学习实践经验，并不涵盖所有方法或保证任何任务都有效。"
+    }
+  ],
+  "journals": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "kind": "预印本平台",
+      "intro": "开放的预印本平台，收录尚未正式发表及已发表研究的预印本版本。"
+    },
+    {
+      "id": "nature",
+      "name": "Nature",
+      "kind": "学术期刊",
+      "intro": "综合性学术期刊。本地收录了关于深度学习的经典综述。"
+    },
+    {
+      "id": "cacm",
+      "name": "Communications of the ACM",
+      "kind": "学术期刊",
+      "intro": "计算领域的专业刊物。本地收录了机器学习实践经验文章。"
+    }
+  ],
+  "posts": [
+    {
+      "id": "sample-0",
+      "author": "林间的笔记",
+      "title": "读论文之前，我会先写下这三个问题",
+      "body": "以前一上来就想把全文读完，读到方法部分就忘了为什么要读。现在会先把三个问题写在纸上，再去找答案。\n\n遇到不懂的公式先做个记号，等主线清楚了再回来。第三张是我的阅读小卡，欢迎补充你会问的问题。",
+      "links": [
+        "topic:交互设计",
+        "paper:rag",
+        "journal:arxiv"
+      ],
+      "images": [],
+      "color": "E8DFC9",
+      "symbol": "pencil.and.list.clipboard",
+      "timestamp": 1792582764.7679071,
+      "isDraft": false,
+      "isMine": false,
+      "imageNames": [
+        "NotesQuestions",
+        "NotesMethod",
+        "NotesMargin"
+      ]
+    },
+    {
+      "id": "sample-1",
+      "author": "阿青",
+      "title": "从一段原文开始，理解 Attention",
+      "body": "今天重读 Transformer，先从结构图和摘要开始，再回到注意力的公式。\n\n试着不看论文，给同学讲一遍“一个词怎样关注其他词”。讲不清的地方，就是下一轮要读的地方。你们读经典论文会先看哪里？",
+      "links": [
+        "topic:生成式 AI",
+        "paper:attention"
+      ],
+      "images": [],
+      "color": "D6E5DF",
+      "symbol": "point.3.connected.trianglepath.dotted",
+      "timestamp": 1792561164.7679071,
+      "isDraft": false,
+      "isMine": false,
+      "imageNames": [
+        "AttentionMap",
+        "AttentionNote"
+      ]
+    },
+    {
+      "id": "sample-2",
+      "author": "读书会",
+      "title": "这周一起读：图像与语言",
+      "body": "这周从 CLIP 开始，聊聊图像和文字怎样建立联系，以及它能给设计工具带来什么。\n\n我把流程和讨论问题画成了三张小卡。读之前先想一个问题：当图片和描述不太匹配时，模型会怎样判断？",
+      "links": [
+        "topic:计算机视觉",
+        "paper:clip",
+        "journal:arxiv"
+      ],
+      "images": [],
+      "color": "E0DEF0",
+      "symbol": "photo.stack",
+      "timestamp": 1792499964.7679071,
+      "isDraft": false,
+      "isMine": false,
+      "imageNames": [
+        "ClipPair",
+        "ClipQuestions",
+        "ClipPlan"
+      ]
+    },
+    {
+      "id": "sample-3",
+      "author": "小周",
+      "title": "收藏夹太多以后，我怎么整理？",
+      "body": "后来发现不是收藏夹不够多，而是收藏之后没有下一步。现在只留三类：这周待读、项目灵感、已经读过。\n\n每篇只写一句“为什么收它”，下次打开时省很多回忆的时间。",
+      "links": [
+        "topic:交互设计",
+        "journal:cacm"
+      ],
+      "images": [],
+      "color": "F0E1D7",
+      "symbol": "bookmark",
+      "timestamp": 1792409964.7679071,
+      "isDraft": false,
+      "isMine": false,
+      "imageNames": [
+        "FolderNotes"
+      ]
+    },
+    {
+      "id": "sample-4",
+      "author": "林间的笔记",
+      "title": "用阅读格子，记录一点点积累",
+      "body": "这周试着每天只认真读一个问题。看懂一张结构图，或者想清楚一个实验的目的，都记下来。\n\n格子变深的时候很开心，空着也没关系。更喜欢的是点开某一天，还能找回当时读过的文章。",
+      "links": [
+        "topic:机器学习",
+        "paper:deep",
+        "journal:nature"
+      ],
+      "images": [],
+      "color": "DAE3EF",
+      "symbol": "calendar",
+      "timestamp": 1792240764.7679071,
+      "isDraft": false,
+      "isMine": false,
+      "imageNames": [
+        "DailyReading"
+      ]
+    }
+  ],
+  "comments": {
+    "post:sample-0": [
+      {
+        "id": "demo-comment-0-0",
+        "author": "阿青",
+        "text": "第三个问题很重要！我会再补一句：这个方法在哪些数据上没有验证过？",
+        "timestamp": 1792583964.7679071
+      },
+      {
+        "id": "demo-comment-0-1",
+        "author": "小周",
+        "text": "我也会先写问题，读完再用自己的话回答，比单纯画线更容易记住。",
+        "timestamp": 1792585164.7679071
+      },
+      {
+        "id": "demo-comment-0-2",
+        "author": "林间的笔记",
+        "text": "“哪些条件下成立”确实容易漏掉，下次读实验先看这一点。",
+        "timestamp": 1792586364.7679071
+      }
+    ],
+    "post:sample-1": [
+      {
+        "id": "demo-comment-1-0",
+        "author": "半页笔记",
+        "text": "我会先看图，但图注也得一起读，不然容易误解箭头的意思。",
+        "timestamp": 1792562364.7679071
+      },
+      {
+        "id": "demo-comment-1-1",
+        "author": "阿青",
+        "text": "对，我这次就先把输入、输出和中间的联系标出来了。",
+        "timestamp": 1792563564.7679071
+      }
+    ],
+    "post:sample-2": [
+      {
+        "id": "demo-comment-2-0",
+        "author": "晚点再读",
+        "text": "第三张的问题可以加一个：换成更专业的图片，还能直接用吗？",
+        "timestamp": 1792501164.7679071
+      },
+      {
+        "id": "demo-comment-2-1",
+        "author": "读书会",
+        "text": "记下了，可以把零样本评估的部分一起读。",
+        "timestamp": 1792502364.7679071
+      },
+      {
+        "id": "demo-comment-2-2",
+        "author": "小周",
+        "text": "我想带一个图文检索的小例子，边看结果边讨论。",
+        "timestamp": 1792503564.7679071
+      }
+    ],
+    "post:sample-3": [
+      {
+        "id": "demo-comment-3-0",
+        "author": "林间的笔记",
+        "text": "“为什么收它”很好用，已经给自己的待读加上这一栏了。",
+        "timestamp": 1792411164.7679071
+      },
+      {
+        "id": "demo-comment-3-1",
+        "author": "小周",
+        "text": "我以前只记论文标题，过两周再看真的想不起来。",
+        "timestamp": 1792412364.7679071
+      }
+    ],
+    "post:sample-4": [
+      {
+        "id": "demo-comment-4-0",
+        "author": "阿青",
+        "text": "同意，读懂一点比打开很多篇更有成就感。",
+        "timestamp": 1792241964.7679071
+      },
+      {
+        "id": "demo-comment-4-1",
+        "author": "半页笔记",
+        "text": "我还想给每天加一句笔记，记录卡住了什么。",
+        "timestamp": 1792243164.7679071
+      }
+    ]
+  }
+}
