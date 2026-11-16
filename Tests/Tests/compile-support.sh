@@ -1,0 +1,5 @@
+# zsh 数组：回归检查使用与 App 相同的数据模型与业务实现。
+model_sources=("$project_dir"/PaperFlow/Models/*.swift)
+state_sources=("$project_dir/PaperFlow/Data/StateDatabase.swift" "$project_dir/PaperFlow/Data/AppStore.swift" "$project_dir/PaperFlow/Data/InterestStore.swift" "$project_dir/PaperFlow/Data/UsageStore.swift" "$project_dir/PaperFlow/Data/OnlineMigration.swift" "$project_dir/PaperFlow/Services/RecommendationEngine.swift")
+service_sources=("$project_dir/PaperFlow/Services/AIService.swift" "$project_dir/PaperFlow/Services/LiteratureService.swift")
+discovery_sources=("$project_dir/PaperFlow/Services/FederatedLiteratureService.swift" "$project_dir/PaperFlow/Services/LiteratureDecoders.swift" "$project_dir/PaperFlow/Services/OpenRepositoryDecoders.swift" "$project_dir/PaperFlow/Services/FigureExtractor.swift" "$project_dir/PaperFlow/Services/PaperFileService.swift" "$project_dir/PaperFlow/Services/DemoAccess.swift" "$project_dir/PaperFlow/Data/AIWorkflow.swift" "$project_dir/PaperFlow/Data/FullTextWorkflow.swift" "$project_dir/PaperFlow/Data/DiscoveryWorkflow.swift")
